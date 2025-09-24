@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda Electro - Ecommerce (HTML/CSS/JS)</title>
+  <link rel="stylesheet" href="assets/style/main.css">
+  <meta name="description" content="Plantilla ecommerce estática con carrito oculto, envío de pedido por WhatsApp y opción para integración con MercadoPago."/>
+  <link rel="shortcut icon" href="assets/img/logo_wepb.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <picture class="logo">
+        <img src="assets/img/logo_wepb.png" alt="logo zona cero seguridad">
+      </picture>
+    </div>
+    <nav>
+      <a href="#home" class="active">Inicio</a>
+      <a href="#shop">Productos</a>
+      <a href="#about">Nosotros</a>
+      <a href="#contact">Contacto</a>
+      <a href="#old" style="color:var(--accent);font-weight:600">Seguridad</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="info">
+        <h1>Tecnología y seguridad en un mismo lugar</h1>
+        <p>Electrodomésticos que hacen tu vida más fácil, al mejor precio y con entrega rápida.</p>
+        <div style="margin-top:14px;display:flex;gap:10px">
+          <button class="btn btn-primary" id="go-shop">Ver productos</button>
+          <button class="btn btn-ghost" id="open-cart">Ver carrito (<span id="cart-count">0</span>)</button>
+        </div>
+      </div>
+      <div style="padding:18px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);box-shadow:var(--shadow)">
+        <h3 style="margin-top:0">Ofertas destacadas</h3>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;gap:12px;align-items:center">
+            <img src="assets/img/tvrcta40.jpeg" alt="tv" style="width:120px;height:80px;object-fit:cover;border-radius:8px" />
+            <div>
+              <strong>Smart TV RCA 40"</strong>
+              <div style="color:var(--muted)">Entrega 24-48hs</div>
+              <div style="margin-top:6px;font-weight:700">$ 279.990</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" style="margin-top:22px">
+      <h2>Productos</h2>
+      <div class="grid" id="products-grid">
+        <!-- Cards se inyectan por JS -->
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:26px">
+      <h2>Nosotros</h2>
+      <p style="color:var(--muted)">Somos una tienda de electrodomésticos con foco en atención por WhatsApp. Esta plantilla es editable con HTML/CSS/JS puro.</p>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <h2>Contacto</h2>
+      <p style="color:var(--muted)">Tel: +54 9 ... • Email: ventas@tiendaelectro.example</p>
+    </section>
+
+    <section id="old" style="margin-top:26px;padding:12px;border-radius:12px;background:rgba(255,255,255,0.02)">
+      <h2>Seguridad</h2>
+      <p style="color:var(--muted)">Si querés volver a la antigua página de cámaras y sistemas de seguridad hacé clic abajo.</p>
+      <a id="link-old" href="#" class="btn btn-ghost">Ir a tienda antigua</a>
+    </section>
+
+  </main>
+
+  <div class="cart-float" id="cart-toggle" title="Ver carrito">🛒 <span id="mini-count" style="margin-left:6px;font-size:12px;color:#021022;display:inline-block"></span></div>
+
+  <aside class="cart-panel hidden" id="cart-panel" aria-hidden="true">
+    <h3 style="margin:6px 0 8px">Tu carrito</h3>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+        <div>
+          <div style="font-size:13px;color:var(--muted)">Total</div>
+          <div id="cart-total" style="font-weight:800;font-size:18px">$0</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;width:45%">
+          <button class="btn btn-primary" id="pay-mercadopago">Pagar con MercadoPago</button>
+          <a id="send-whatsapp" class="whatsapp btn btn-ghost" href="#">Enviar pedido por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+  </footer>
+  <script src="main.js"></script>
+
+</body>
+</html>
