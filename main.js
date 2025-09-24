@@ -14,7 +14,7 @@
     const products = [
       {id:1,title:'Smart TV RCA 40"',price:279990,img:'assets/img/tvrcta40.jpeg',stock:5},
       {id:2,title:'Lavarropas MIIDEA gris 6KG 1000rpm',price:159990,img:'assets/img/lavarropamiidea.jpeg',stock:3},
-      {id:3,title:'Heladera No Frost',price:219990,img:'https://via.placeholder.com/300x200?text=Heladera',stock:2},
+      {id:3,title:'Notebook ENOVA 14',price:26000,img:'assets/img/notebookenova.png',stock:2},
       {id:4,title:'Microondas 25L',price:34990,img:'https://via.placeholder.com/300x200?text=Microondas',stock:7},
       {id:5,title:'Aspiradora Ciclonica',price:42990,img:'https://via.placeholder.com/300x200?text=Aspiradora',stock:4}
     ];
