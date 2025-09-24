@@ -126,7 +126,7 @@ button.btn {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--accent);
+  background: rgba(225, 255, 0, 0.728);
   display: flex;
   align-items: center;
   justify-content: center;

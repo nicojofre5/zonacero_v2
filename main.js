@@ -18,8 +18,8 @@
       {id:4,title:'HELADERA PHILCO 290 LITROS INOX',price:390000,img:'assets/img/heladerphilco.jpeg',stock:7},
       {id:5,title:'Cocina Peabody',price:264000,img:'assets/img/cocinabeabodyacero.jpeg',stock:4},
       {id:6,title:'Lavarropas BGH 8kg 1400 rpm inverter',price:580000,img:'assets/img/lavarropasbhg.jpeg',stock:4},
-      {id:7,title:'Cocina Peabody',price:264000,img:'assets/img/cocinabeabodyacero.jpeg',stock:4},
-      {id:8,title:'Cocina Peabody',price:264000,img:'assets/img/cocinabeabodyacero.jpeg',stock:4}
+      {id:7,title:'PARLANTE POTENCIADO GLD2410 4200PMPO',price:264000,img:'assets/img/parlante gld2310.jpeg',stock:4},
+      {id:8,title:'Smart Philco ANDROID 32”(PLD32HS25AH)',price:210000,img:'assets/img/smartphilco32.webp',stock:4}
     
     
     
