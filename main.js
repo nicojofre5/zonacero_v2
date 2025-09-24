@@ -12,11 +12,17 @@
 
     /* ========== DATOS (agregar / editar productos) ========== */
     const products = [
-      {id:1,title:'Smart TV RCA 40"',price:279990,img:'assets/img/tvrcta40.jpeg',stock:5},
-      {id:2,title:'Lavarropas MIIDEA gris 6KG 1000rpm',price:159990,img:'assets/img/lavarropamiidea.jpeg',stock:3},
-      {id:3,title:'Notebook ENOVA 14',price:26000,img:'assets/img/notebookenova.png',stock:2},
-      {id:4,title:'Microondas 25L',price:34990,img:'https://via.placeholder.com/300x200?text=Microondas',stock:7},
-      {id:5,title:'Aspiradora Ciclonica',price:42990,img:'https://via.placeholder.com/300x200?text=Aspiradora',stock:4}
+      {id:1,title:'Smart TV RCA 40"',price:280000,img:'assets/img/tvrcta40.jpeg',stock:5},
+      {id:2,title:'Lavarropas MIIDEA gris 6KG 1000rpm',price:440000,img:'assets/img/lavarropamiidea.jpeg',stock:3},
+      {id:3,title:'Notebook ENOVA 14',price:260000,img:'assets/img/notebookenova.png',stock:2},
+      {id:4,title:'HELADERA PHILCO 290 LITROS INOX',price:390000,img:'assets/img/heladerphilco.jpeg',stock:7},
+      {id:5,title:'Cocina Peabody',price:264000,img:'assets/img/cocinabeabodyacero.jpeg',stock:4},
+      {id:6,title:'Lavarropas BGH 8kg 1400 rpm inverter',price:580000,img:'assets/img/lavarropasbhg.jpeg',stock:4},
+      {id:7,title:'Cocina Peabody',price:264000,img:'assets/img/cocinabeabodyacero.jpeg',stock:4},
+      {id:8,title:'Cocina Peabody',price:264000,img:'assets/img/cocinabeabodyacero.jpeg',stock:4}
+    
+    
+    
     ];
 
     /* ========== LÓGICA DEL CARRITO ========== */
