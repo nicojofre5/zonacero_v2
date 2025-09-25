@@ -207,17 +207,15 @@ footer {
     width: auto;
   }
   .nav-bar {
-     flex-direction: column;
-    position: fixed;
+    display: none;
     top: 0;
-    right: -250px; /* oculto por defecto */
-    width: 250px;
-    height: 100%;
-     background: linear-gradient(180deg, #242600 0%, #000000 60%);
+    left: 0;
+  position: absolute;
+  width: 50%;
+    min-height: 100%;
+    background: linear-gradient(180deg, #242600 0%, #000000 60%);
     padding: 2rem 1rem;
-    gap: 1.5rem;
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
+   
   }
   .icon-bar {
     display: block;
@@ -225,17 +223,8 @@ footer {
   }
    
   .nav-bar.active {
-    right: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  .overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 500;
-  }
-  .overlay.active {
-    display: block;
-  }
 }
