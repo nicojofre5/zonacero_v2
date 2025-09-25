@@ -193,8 +193,8 @@ footer {
   display: none;
   cursor: pointer;
 }
-.icon-bar img{
-    width: 30px;
+.icon-bar img {
+  width: 30px;
 }
 /* responsive */
 @media (max-width: 880px) {
@@ -208,23 +208,22 @@ footer {
   }
   .nav-bar {
     display: none;
-    top: 0;
+    top: 10%;
     left: 0;
-  position: absolute;
-  width: 50%;
+    position: absolute;
+
     min-height: 100%;
     background: linear-gradient(180deg, #242600 0%, #000000 60%);
     padding: 2rem 1rem;
-   
   }
   .icon-bar {
     display: block;
-   
   }
-   
+
   .nav-bar.active {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
-
 }
