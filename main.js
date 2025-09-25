@@ -183,3 +183,26 @@
 
     // Si querés vaciar el carrito con una tecla (dev)
     window.clearCart = ()=>{ cart=[]; saveCart(); };
+
+    const menuIcon = document.getElementById("menuIcon");
+const navLinks = document.getElementById("navBar");
+const overlay = document.getElementById("overlay");
+
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+// cerrar al hacer click en overlay
+overlay.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+  overlay.classList.remove("active");
+});
+
+// cerrar al hacer click en un link
+document.querySelectorAll("#navLinks a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
